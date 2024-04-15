@@ -9,18 +9,10 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-include ~/.config/i3/assignments.conf
-include ~/.config/i3/workspaces.conf
-include ~/.config/i3/startup.conf
-include ~/.config/i3/display.conf
-
 set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:Swiss 721 12 
-
-exec_always feh --bg-fill ~/Pictures/watch_dogs_live_wallpaper_upscaled.jpg
-exec_always --no-startup-id "picom"
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -170,6 +162,9 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+
+bindsym $mod+Shift+b exec "i3-nagbar -t warning -m 'Do you really want to reboot?' -B 'Yes, reboot i3' 'exec reboot'"
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -206,3 +201,11 @@ bar {
     tray_padding 0 
     separator_symbol " </> "
 }
+
+include display.conf
+include startup.conf
+include assignments.conf
+include workspaces.conf
+
+
+
