@@ -1,0 +1,7 @@
+[user]
+	name = Gustavo Henrique dos Santos Domingos
+	email = h.gustavaspeed2002@gmail.com
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
