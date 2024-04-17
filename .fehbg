@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/ghd8/dotfiles/.config/i3/wallpaper/watch_dogs_live_wallpaper_upscaled.jpg' 

@@ -98,7 +98,6 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 if [ -n "$TMUX" ]; then
@@ -115,3 +114,7 @@ alias cl="clear"
 alias mr='mvn spring-boot:run'
 alias pm='/opt/Postman/./Postman'
 alias srz='source ~/.zshrc'
+alias cglut='~/dotfiles/scripts/./cglut.sh'
+alias zc="vim ~/.zshrc"
+feh --bg-fill ~/dotfiles/.config/i3/wallpaper/watch_dogs_live_wallpaper_upscaled.jpg
+
